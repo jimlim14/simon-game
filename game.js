@@ -8,6 +8,16 @@ var started = false;
 var localStorageName = "crackalien";
 var bestScore;
 
+$(document).ready(function(){
+  $("#t1").tooltip({
+    content: getDataFromToolTip, track: true
+  });  
+});
+
+function getDataFromToolTip(){
+  return ""  
+}
+
 $(document).on("keydown", function(event) {
   if (!started)
   {
